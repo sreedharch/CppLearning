@@ -57,6 +57,8 @@ public:
   //For example,
   //const T* data() const
   //the input pointer Vector* this will become Vector const* this if the member method has const specifier
+  //Ref: https://stackoverflow.com/questions/19237411/const-and-non-const-operator-overloading
+  //Ref: https://leimao.github.io/blog/CPP-Const-Overloading/
   Obj *operator->() const {
     if (!oc.a[index]) {
       cout << "Zero value";
