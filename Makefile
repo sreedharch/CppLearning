@@ -6,7 +6,7 @@ override CXXFLAGS += -g -Wno-everything
 #SRCS = $(shell find . -name '.ccls-cache' -type d -prune -o -type f -name '*.cpp' -print | sed -e 's/ /\\ /g')
 #HEADERS = $(shell find . -name '.ccls-cache' -type d -prune -o -type f -name '*.h' -print)
 
-INCLUDE_DIR = oop/interfaces
+INCLUDE_DIR = advanced/templates
 SRCS = $(shell find $(INCLUDE_DIR) -name '.ccls-cache' -type d -prune -o -type f -name '*.cpp' -print | sed -e 's/ /\\ /g')
 HEADERS = $(shell find $(INCLUDE_DIR) -name '.ccls-cache' -type d -prune -o -type f -name '*.h' -print)
 

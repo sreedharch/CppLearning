@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  // pointer initialized with null
+  double *pvalue = NULL;
+  // request memory for the variable
+  pvalue = new double;
+
+  // store value at allocated address
+  *pvalue = 29494.99;
+  cout << "Value of pvalue: " << *pvalue << endl;
+
+  // free up the memory
+  delete pvalue;
+}

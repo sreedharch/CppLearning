@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+// first namespace
+namespace first_space {
+void func() { cout << "Inside first_space" << endl; }
+// second namespace nested
+namespace second_space {
+void func() { cout << "Inside second_space" << endl; }
+} // namespace second_space
+} // namespace first_space
+
+using namespace first_space::second_space;
+int main() {
+  // this calls fucntion from second namespace
+  func();
+}
