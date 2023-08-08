@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+#define CONCAT(x, y) x##y
+
+int main() {
+  int xy = 100;
+  /*
+    When CONCAT appears in the program, its arguments are concatenated and used
+    to replace the macro
+  */
+  cout << CONCAT(x, y) << endl;
+}
